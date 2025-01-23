@@ -1,0 +1,3617 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/SEC/ontologies/2024/OntoUrbanMetabolism"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/SEC/ontologies/2024/OntoUrbanMetabolism">
+    <Prefix name="" IRI="http://www.semanticweb.org/SEC/ontologies/2024/OntoUrbanMetabolism/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal>Ontology dedicated to conceptualizing urban metabolism.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal>An Ontology for Urban Metabolism</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Developed as part of the Urban Metabolism research undertaken within the Cities Knowledge Graph project.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#MetabolicObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetabolicRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetabolicSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetabolicTimespan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PursuedState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceAccumulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceDepletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceInflow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceOutflow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanMetabolism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MetabolismTemporallyBoundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ResourceFlowTemporallyBoundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWithObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containedWithin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#desiresState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatedByActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesMetabolism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesResourceFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFootprint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResourceFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStakeIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pursuesState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spatiallyBoundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temporallyBoundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesResource"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/abstract"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/accessRights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/alternative"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/audience"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/available"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/conformsTo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/dateAccepted"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/dateCopyrighted"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/dateSubmitted"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/educationLevel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/extent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasFormat"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasPart"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/isFormatOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/isReferencedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/isReplacedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/isRequiredBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/mediator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/medium"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/replaces"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/requires"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/spatial"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/tableOfContents"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/temporal"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/valid"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ResourceAccumulation"/>
+        <Class IRI="#ResourceFlow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResourceDepletion"/>
+        <Class IRI="#ResourceFlow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResourceInflow"/>
+        <Class IRI="#ResourceFlow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResourceOutflow"/>
+        <Class IRI="#ResourceFlow"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MetabolismTemporallyBoundedBy"/>
+        <ObjectProperty IRI="#temporallyBoundedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ResourceFlowTemporallyBoundedBy"/>
+        <ObjectProperty IRI="#temporallyBoundedBy"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MetabolismTemporallyBoundedBy"/>
+        <Class IRI="#UrbanMetabolism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ResourceFlowTemporallyBoundedBy"/>
+        <Class IRI="#ResourceFlow"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedWithObject"/>
+        <Class IRI="#UrbanActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containedWithin"/>
+        <Class IRI="#MetabolicObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#desiresState"/>
+        <Class IRI="#UrbanAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatedByActivity"/>
+        <Class IRI="#UrbanMetabolism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesMetabolism"/>
+        <Class IRI="#UrbanActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesResourceFlow"/>
+        <Class IRI="#UrbanMetabolism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFootprint"/>
+        <Class IRI="#UrbanMetabolism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResourceFlowRate"/>
+        <Class IRI="#ResourceFlow"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStakeIn"/>
+        <Class IRI="#UrbanAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#spatiallyBoundedBy"/>
+        <Class IRI="#UrbanMetabolism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesResource"/>
+        <Class IRI="#ResourceFlow"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MetabolismTemporallyBoundedBy"/>
+        <Class IRI="#MetabolicTimespan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ResourceFlowTemporallyBoundedBy"/>
+        <Class IRI="#MetabolicTimespan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedWithObject"/>
+        <Class IRI="#MetabolicObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containedWithin"/>
+        <Class IRI="#MetabolicSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#desiresState"/>
+        <Class IRI="#PursuedState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatedByActivity"/>
+        <Class IRI="#UrbanActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesMetabolism"/>
+        <Class IRI="#UrbanMetabolism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesResourceFlow"/>
+        <Class IRI="#ResourceFlow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFootprint"/>
+        <Class IRI="#MetabolicRate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResourceFlowRate"/>
+        <Class IRI="#ResourceFlowRate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStakeIn"/>
+        <Class IRI="#UrbanActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#spatiallyBoundedBy"/>
+        <Class IRI="#MetabolicSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesResource"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Collection-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+        <Literal xml:lang="en-us">A collection is an aggregation of items. The term 
+            collection means that the resource is described as a 
+            group; its parts may be separately described and navigated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+        <Literal xml:lang="en-us">Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Dataset</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Dataset</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Dataset-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Dataset</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Dataset</IRI>
+        <Literal xml:lang="en-us">A dataset is information encoded in a defined structure 
+            (for example, lists, tables, and databases), intended to 
+            be useful for direct machine processing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Dataset</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Dataset</IRI>
+        <Literal xml:lang="en-us">Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Event</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Event</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Event-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Event</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Event</IRI>
+        <Literal xml:lang="en-us">An event is a non-persistent, time-based occurrence. 
+            Metadata for an event provides descriptive
+            information that is the basis for discovery of the
+            purpose, location, duration, responsible agents, and
+            links to related events and resources.  The resource
+            of type event may not be retrievable if the described
+            instantiation has expired or is yet to occur.
+            Examples - exhibition, web-cast, conference,
+            workshop, open-day, performance, battle, trial,
+            wedding, tea-party, conflagration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Event</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Event</IRI>
+        <Literal xml:lang="en-us">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Image</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Image</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Image-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Image</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Image</IRI>
+        <Literal xml:lang="en-us">An image is a primarily symbolic visual representation 
+            other than text. For example - images and photographs of 
+            physical objects, paintings, prints, drawings, other 
+            images and graphics, animations and moving pictures, 
+            film, diagrams, maps, musical notation. Note that image 
+            may include both electronic and physical representations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Image</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Image</IRI>
+        <Literal xml:lang="en-us">Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/InteractiveResource</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/InteractiveResource</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#InteractiveResource-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/InteractiveResource</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/InteractiveResource</IRI>
+        <Literal xml:lang="en-us">An interactive resource is a resource which requires 
+            interaction from the user to be understood, executed, 
+            or experienced. For example - forms on web pages, applets, 
+            multimedia learning objects, chat services, virtual 
+            reality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/InteractiveResource</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/InteractiveResource</IRI>
+        <Literal xml:lang="en-us">Interactive Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/PhysicalObject</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/PhysicalObject</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#PhysicalObject-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/PhysicalObject</IRI>
+        <Literal>2002-07-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/PhysicalObject</IRI>
+        <Literal xml:lang="en-us">An inanimate, three-dimensional object or substance.  
+            For example -- a computer, the great pyramid, a 
+            sculpture.  Note that digital representations 
+            of, or surrogates for, these things should use Image, 
+            Text or one of the other types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/PhysicalObject</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/PhysicalObject</IRI>
+        <Literal xml:lang="en-us">Physical Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Service</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Service</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Service-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Service</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Service</IRI>
+        <Literal xml:lang="en-us">A service is a system that provides one or more 
+            functions of value to the end-user. Examples include: 
+            a photocopying service, a banking service, an 
+            authentication service, interlibrary loans, a Z39.50 
+            or Web server.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Service</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Service</IRI>
+        <Literal xml:lang="en-us">Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Software</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Software</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Software-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Software</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Software</IRI>
+        <Literal xml:lang="en-us">Software is a computer program in source or 
+            compiled form which may be available for installation 
+            non-transiently on another machine. For software which 
+            exists only to create an interactive environment, use 
+            interactive instead.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Software</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Software</IRI>
+        <Literal xml:lang="en-us">Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Sound</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Sound</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Sound-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Sound</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Sound</IRI>
+        <Literal xml:lang="en-us">A sound is a resource whose content is primarily 
+            intended to be rendered as audio. For example - a 
+            music playback file format, an audio compact disc, 
+            and recorded speech or sounds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Sound</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Sound</IRI>
+        <Literal xml:lang="en-us">Sound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/dcmitype/Text</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#vocabulary-term</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/dcmitype/Text</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Text-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/dcmitype/Text</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/dcmitype/Text</IRI>
+        <Literal xml:lang="en-us">A text is a resource whose content is primarily 
+            words for reading. For example - books, letters, 
+            dissertations, poems, newspapers, articles, 
+            archives of mailing lists. Note that facsimiles 
+            or images of texts are still of the genre text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/dcmitype/Text</IRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/dcmitype/Text</IRI>
+        <Literal xml:lang="en-us">Text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal xml:lang="en-us">Examples of a Contributor include a person, an 
+         organisation, or a service.  Typically, the name of a 
+         Contributor should be used to indicate the entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#contributor-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal xml:lang="en-us">An entity responsible for making contributions to the
+         content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal xml:lang="en-us">Contributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal xml:lang="en-us">Coverage will typically include spatial location (a place name
+         or geographic coordinates), temporal period (a period label,
+         date, or date range) or jurisdiction (such as a named
+         administrative entity).
+         Recommended best practice is to select a value from a
+         controlled vocabulary (for example, the Thesaurus of Geographic
+         Names [TGN]) and that, where appropriate, named places or time
+         periods be used in preference to numeric identifiers such as
+         sets of coordinates or date ranges.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#coverage-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal xml:lang="en-us">The extent or scope of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal xml:lang="en-us">Coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en-us">Examples of a Creator include a person, an organisation,
+         or a service.  Typically, the name of a Creator should 
+         be used to indicate the entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#creator-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en-us">An entity primarily responsible for making the content 
+         of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en-us">Creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal xml:lang="en-us">Typically, Date will be associated with the creation or
+         availability of the resource.  Recommended best practice
+         for encoding the date value is defined in a profile of
+         ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#date-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal xml:lang="en-us">A date associated with an event in the life cycle of the
+         resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal xml:lang="en-us">Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal xml:lang="en-us">Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#description-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal xml:lang="en-us">An account of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal xml:lang="en-us">Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal xml:lang="en-us">Typically, Format may include the media-type or dimensions of
+         the resource. Format may be used to determine the software,
+         hardware or other equipment needed to display or operate the
+         resource. Examples of dimensions include size and duration.
+         Recommended best practice is to select a value from a
+         controlled vocabulary (for example, the list of Internet Media
+         Types [MIME] defining computer media formats).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#format-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal xml:lang="en-us">The physical or digital manifestation of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal xml:lang="en-us">Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal xml:lang="en-us">Recommended best practice is to identify the resource by means
+         of a string or number conforming to a formal identification
+         system.
+         Example formal identification systems include the Uniform
+         Resource Identifier (URI) (including the Uniform Resource
+         Locator (URL)), the Digital Object Identifier (DOI) and the
+         International Standard Book Number (ISBN).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#identifier-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal xml:lang="en-us">An unambiguous reference to the resource within a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal xml:lang="en-us">Resource Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal xml:lang="en-us">Recommended best practice is to use RFC 3066 [RFC3066],
+         which, in conjunction with ISO 639 [ISO639], defines two-
+         and three-letter primary language tags with optional
+         subtags.  Examples include &quot;en&quot; or &quot;eng&quot; for English,
+         &quot;akk&quot; for Akkadian, and &quot;en-GB&quot; for English used in the
+         United Kingdom.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#language-005</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal xml:lang="en-us">A language of the intellectual content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal xml:lang="en-us">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal xml:lang="en-us">Examples of a Publisher include a person, an organisation,
+         or a service.
+         Typically, the name of a Publisher should be used to
+         indicate the entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#publisher-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal xml:lang="en-us">An entity responsible for making the resource available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal xml:lang="en-us">Publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal xml:lang="en-us">
+         Recommended best practice is to reference the resource by means
+         of a string or number conforming to a formal identification
+         system.
+    </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#relation-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal xml:lang="en-us">A reference to a related resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal xml:lang="en-us">Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal xml:lang="en-us">
+          Typically, a Rights element will contain a rights 
+          management statement for the resource, or reference 
+          a service providing such information. Rights information 
+          often encompasses Intellectual Property Rights (IPR), 
+          Copyright, and various Property Rights. 
+          If the Rights element is absent, no assumptions can be made 
+          about the status of these and other rights with respect to 
+          the resource.
+    </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#rights-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal xml:lang="en-us">Information about rights held in and over the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal xml:lang="en-us">Rights Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <Literal xml:lang="en-us">The present resource may be derived from the Source resource
+         in whole or in part.  Recommended best practice is to reference
+         the resource by means of a string or number conforming to a
+         formal identification system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#source-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <Literal xml:lang="en-us">A reference to a resource from which the present resource
+         is derived.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <Literal xml:lang="en-us">Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal xml:lang="en-us">Typically, a Subject will be expressed as keywords,
+         key phrases or classification codes that describe a topic
+         of the resource.  Recommended best practice is to select 
+         a value from a controlled vocabulary or formal 
+         classification scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#subject-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal xml:lang="en-us">The topic of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal xml:lang="en-us">Subject and Keywords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en-us">
+        Typically, a Title will be a name by which the resource is
+         formally known.
+    </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#title-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en-us">A name given to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en-us">Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal xml:lang="en-us">Type includes terms describing general categories, functions,
+         genres, or aggregation levels for content. Recommended best
+         practice is to select a value from a controlled vocabulary
+         (for example, the DCMI Type Vocabulary [DCMITYPE]). To 
+         describe the physical or digital manifestation of the 
+         resource, use the Format element.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#type-004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal>1999-07-02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal>2002-10-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal xml:lang="en-us">The nature or genre of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal xml:lang="en-us">Resource Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Box-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <Literal xml:lang="en-us">The DCMI Box identifies a region of space using its geographic limits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <Literal xml:lang="en-us">DCMI Box</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/Box</IRI>
+        <IRI>http://dublincore.org/documents/dcmi-box/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <Literal>
+            The DCMI Type Vocabulary provides a general, cross-domain list of
+            approved terms that may be used as values for the Resource Type
+            element to identify the genre of a resource.
+     </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#DCMIType-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <Literal xml:lang="en-us">A list of types used to categorize the nature or genre 
+                                            of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <Literal xml:lang="en-us">DCMI Type Vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/DCMIType</IRI>
+        <IRI>http://dublincore.org/documents/dcmi-type-vocabulary/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#DDC-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <Literal xml:lang="en-us">Dewey Decimal Classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <Literal xml:lang="en-us">DDC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/DDC</IRI>
+        <IRI>http://www.oclc.org/dewey/index.htm</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/DateScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/DateScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/DateScheme</IRI>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/DateScheme</IRI>
+        <Literal xml:lang="en-us">A set of date encoding schemes and/or formats </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/DateScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/DateScheme</IRI>
+        <Literal xml:lang="en-us">Date Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/FormatScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/FormatScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/FormatScheme</IRI>
+        <Literal xml:lang="en-us">A set of format encoding schemes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/FormatScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/FormatScheme</IRI>
+        <Literal xml:lang="en-us">Format Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#IMT-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <Literal xml:lang="en-us">The Internet media type of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <Literal xml:lang="en-us">IMT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/IMT</IRI>
+        <IRI>http://www.isi.edu/in-notes/iana/assignments/media-types/media-types</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#ISO3166-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <Literal xml:lang="en-us">ISO 3166 Codes for the representation of names of countries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <Literal xml:lang="en-us">ISO 3166</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/ISO3166</IRI>
+        <IRI>http://www.din.de/gremien/nas/nabd/iso3166ma/codlstp1/index.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#ISO639-2-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <Literal xml:lang="en-us">ISO 639-2: Codes for the representation of names of languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <Literal xml:lang="en-us">ISO 639-2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/ISO639-2</IRI>
+        <IRI>http://lcweb.loc.gov/standards/iso639-2/langhome.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/IdentifierScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/IdentifierScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/IdentifierScheme</IRI>
+        <Literal xml:lang="en-us">A set of resource identifier encoding schemes and/or formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/IdentifierScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/IdentifierScheme</IRI>
+        <Literal xml:lang="en-us">Resource Identifier Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#LCC-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <Literal xml:lang="en-us">Library of Congress Classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <Literal xml:lang="en-us">LCC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/LCC</IRI>
+        <IRI>http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/LCSH</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/LCSH</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#LCSH-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/LCSH</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/LCSH</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/LCSH</IRI>
+        <Literal xml:lang="en-us">Library of Congress Subject Headings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/LCSH</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/LCSH</IRI>
+        <Literal xml:lang="en-us">LCSH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/LanguageScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/LanguageScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/LanguageScheme</IRI>
+        <Literal xml:lang="en-us">A set of language encoding schemes and/or formats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/LanguageScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/LanguageScheme</IRI>
+        <Literal xml:lang="en-us">Language Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#MESH-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <Literal xml:lang="en-us">Medical Subject Headings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <Literal xml:lang="en-us">MeSH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/MESH</IRI>
+        <IRI>http://www.nlm.nih.gov/mesh/meshhome.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Period-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <Literal xml:lang="en-us">A specification of the limits of a time interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <Literal xml:lang="en-us">DCMI Period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/Period</IRI>
+        <IRI>http://dublincore.org/documents/dcmi-period/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#Point-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <Literal xml:lang="en-us">The DCMI Point identifies a point in space using its geographic coordinates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <Literal xml:lang="en-us">DCMI Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/Point</IRI>
+        <IRI>http://dublincore.org/documents/dcmi-point/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#RFC1766-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <Literal xml:lang="en-us">Internet RFC 1766 &apos;Tags for the identification of Language&apos; 
+                                            specifies a two letter code taken from ISO 639, followed 
+                                            optionally by a two letter country code taken from ISO 3166.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <Literal xml:lang="en-us">RFC 1766</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/RFC1766</IRI>
+        <IRI>http://www.ietf.org/rfc/rfc1766.txt</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/RFC3066</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/RFC3066</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#RFC3066-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/RFC3066</IRI>
+        <Literal>2002-07-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/RFC3066</IRI>
+        <Literal xml:lang="en-us">Internet RFC 3066 &apos;Tags for the Identification of 
+            Languages&apos; specifies a primary subtag which
+            is a two-letter code taken from ISO 639 part
+            1 or a three-letter code taken from ISO 639
+            part 2, followed optionally by a two-letter
+            country code taken from ISO 3166.  When a
+            language in ISO 639 has both a two-letter and
+            three-letter code, use the two-letter code;
+            when it has only a three-letter code, use the
+            three-letter code.  This RFC replaces RFC
+            1766.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/RFC3066</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/RFC3066</IRI>
+        <Literal xml:lang="en-us">RFC 3066</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/RelationScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/RelationScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/RelationScheme</IRI>
+        <Literal xml:lang="en-us">A set of resource relation encoding schemes and/or formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/RelationScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/RelationScheme</IRI>
+        <Literal xml:lang="en-us">Resource Relation Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/SourceScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/SourceScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/SourceScheme</IRI>
+        <Literal xml:lang="en-us">A set of source encoding schemes and/or formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/SourceScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/SourceScheme</IRI>
+        <Literal xml:lang="en-us">Source Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/SpatialScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/SpatialScheme</IRI>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/SpatialScheme</IRI>
+        <Literal xml:lang="en-us">A set of geographic place encoding schemes and/or formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/SpatialScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/SpatialScheme</IRI>
+        <Literal xml:lang="en-us">Place Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/SubjectScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/SubjectScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/SubjectScheme</IRI>
+        <Literal xml:lang="en-us">A set of subject encoding schemes and/or formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/SubjectScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/SubjectScheme</IRI>
+        <Literal xml:lang="en-us">Subject Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#TGN-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <Literal xml:lang="en-us">The Getty Thesaurus of Geographic Names</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <Literal xml:lang="en-us">TGN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/TGN</IRI>
+        <IRI>http://www.getty.edu/research/tools/vocabulary/tgn/index.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/TemporalScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/TemporalScheme</IRI>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/TemporalScheme</IRI>
+        <Literal xml:lang="en-us">A set of encoding schemes for 
+       the coverage qualifier &quot;temporal&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/TemporalScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/TemporalScheme</IRI>
+        <Literal xml:lang="en-us">Encoding Schemes
+        for temporal characteristics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/TypeScheme</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/references"/>
+        <IRI>http://purl.org/dc/terms/TypeScheme</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/TypeScheme</IRI>
+        <Literal xml:lang="en-us">A set of resource type encoding schemes and/or formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/TypeScheme</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/TypeScheme</IRI>
+        <Literal xml:lang="en-us">Resource Type Encoding Schemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#UDC-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <Literal xml:lang="en-us">Universal Decimal Classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <Literal xml:lang="en-us">UDC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/UDC</IRI>
+        <IRI>http://www.udcc.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#URI-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <Literal xml:lang="en-us">A URI Uniform Resource Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <Literal xml:lang="en-us">URI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/URI</IRI>
+        <IRI>http://www.ietf.org/rfc/rfc2396.txt</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#encoding-scheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#W3CDTF-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <Literal xml:lang="en-us">W3C Encoding rules for dates and times - a profile based on ISO 8601</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <Literal xml:lang="en-us">W3C-DTF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.org/dc/terms/W3CDTF</IRI>
+        <IRI>http://www.w3.org/TR/NOTE-datetime</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/abstract</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/abstract</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#abstract-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/abstract</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/abstract</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/abstract</IRI>
+        <Literal xml:lang="en-us">A summary of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/abstract</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/abstract</IRI>
+        <Literal xml:lang="en-us">Abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/terms/accessRights</IRI>
+        <Literal xml:lang="en-us">Access Rights may include information
+            regarding access or restrictions based on privacy, 
+            security or other regulations.
+            </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/accessRights</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/accessRights</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#accessRights-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/accessRights</IRI>
+        <Literal>2003-02-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/accessRights</IRI>
+        <Literal xml:lang="en-us">Information about who can access the
+            resource or an indication of its security status.
+            </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/accessRights</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/accessRights</IRI>
+        <Literal xml:lang="en-us">Access Rights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <Literal xml:lang="en-us">This qualifier can include Title abbreviations as well 
+            as translations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#alternative-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <Literal xml:lang="en-us">Any form of the title used as a substitute or alternative 
+            to the formal title of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/alternative</IRI>
+        <Literal xml:lang="en-us">Alternative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <Literal xml:lang="en-us">A class of entity may be determined by the creator or the 
+            publisher or by a third party.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#audience-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <Literal>2001-05-21</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <Literal xml:lang="en-us">A class of entity for whom the resource is intended or useful.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/audience</IRI>
+        <Literal xml:lang="en-us">Audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/available</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/available</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#available-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/available</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/available</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/available</IRI>
+        <Literal xml:lang="en-us">Date (often a range) that the resource will become or did 
+            become available.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/available</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/available</IRI>
+        <Literal xml:lang="en-us">Available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/terms/bibliographicCitation</IRI>
+        <Literal xml:lang="en-us">Recommended practice is to include sufficient 
+            bibliographic detail to identify the resource as 
+            unambiguously as possible, whether or not the
+            citation is in a standard form.
+            </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/bibliographicCitation</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/bibliographicCitation</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#bibliographicCitation-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/bibliographicCitation</IRI>
+        <Literal>2003-02-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/bibliographicCitation</IRI>
+        <Literal xml:lang="en-us">A bibliographic reference for the resource.
+            </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/bibliographicCitation</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/bibliographicCitation</IRI>
+        <Literal xml:lang="en-us">Bibliographic Citation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#conformsTo-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
+        <Literal>2001-05-21</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
+        <Literal xml:lang="en-us">A reference to an established standard to which the resource conforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/conformsTo</IRI>
+        <Literal xml:lang="en-us">Conforms To</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#created-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <Literal xml:lang="en-us">Date of creation of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/created</IRI>
+        <Literal xml:lang="en-us">Created</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/dateAccepted</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/dateAccepted</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#dateAccepted-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/dateAccepted</IRI>
+        <Literal>2002-07-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/dateAccepted</IRI>
+        <Literal xml:lang="en-us">Date of acceptance of the resource (e.g. of thesis
+            by university department, of article by journal, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/dateAccepted</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/dateAccepted</IRI>
+        <Literal xml:lang="en-us">Date Accepted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/dateCopyrighted</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/dateCopyrighted</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#dateCopyrighted-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/dateCopyrighted</IRI>
+        <Literal>2002-07-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/dateCopyrighted</IRI>
+        <Literal xml:lang="en-us">Date of a statement of copyright.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/dateCopyrighted</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/dateCopyrighted</IRI>
+        <Literal xml:lang="en-us">Date Copyrighted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/dateSubmitted</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/dateSubmitted</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#dateSubmitted-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/dateSubmitted</IRI>
+        <Literal>2002-07-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/dateSubmitted</IRI>
+        <Literal xml:lang="en-us">Date of submission of the resource (e.g. thesis, 
+            articles, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/dateSubmitted</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/dateSubmitted</IRI>
+        <Literal xml:lang="en-us">Date Submitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/educationLevel</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/educationLevel</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#educationLevel-001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/educationLevel</IRI>
+        <Literal>2002-07-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/educationLevel</IRI>
+        <Literal xml:lang="en-us">A general statement describing the education or 
+            training context.  Alternatively, a more specific 
+            statement of the location of the audience in terms of 
+            its progression through an education or training context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/educationLevel</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/educationLevel</IRI>
+        <Literal xml:lang="en-us">Audience Education Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/extent</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/extent</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#extent-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/extent</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/extent</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/extent</IRI>
+        <Literal xml:lang="en-us">The size or duration of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/extent</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/extent</IRI>
+        <Literal xml:lang="en-us">Extent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/hasFormat</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/hasFormat</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#hasFormat-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/hasFormat</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/hasFormat</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/hasFormat</IRI>
+        <Literal xml:lang="en-us">The described resource pre-existed the referenced resource, 
+            which is essentially the same intellectual content presented 
+            in another format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/hasFormat</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/hasFormat</IRI>
+        <Literal xml:lang="en-us">Has Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#hasPart-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <Literal xml:lang="en-us">The described resource includes the referenced resource either 
+            physically or logically.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <Literal xml:lang="en-us">Has Part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/hasVersion</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/hasVersion</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#hasVersion-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/hasVersion</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/hasVersion</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/hasVersion</IRI>
+        <Literal xml:lang="en-us">The described resource has a version, edition, or adaptation, 
+            namely, the referenced resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/hasVersion</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/hasVersion</IRI>
+        <Literal xml:lang="en-us">Has Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/isFormatOf</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/isFormatOf</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#isFormatOf-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/isFormatOf</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/isFormatOf</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/isFormatOf</IRI>
+        <Literal xml:lang="en-us">The described resource is the same intellectual content of 
+            the referenced resource, but presented in another format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/isFormatOf</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isFormatOf</IRI>
+        <Literal xml:lang="en-us">Is Format Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#isPartOf-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <Literal xml:lang="en-us">The described resource is a physical or logical part of the 
+            referenced resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <Literal xml:lang="en-us">Is Part Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/isReferencedBy</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/isReferencedBy</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#isReferencedBy-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/isReferencedBy</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/isReferencedBy</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/isReferencedBy</IRI>
+        <Literal xml:lang="en-us">The described resource is referenced, cited, or otherwise 
+            pointed to by the referenced resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/isReferencedBy</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isReferencedBy</IRI>
+        <Literal xml:lang="en-us">Is Referenced By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/isReplacedBy</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/isReplacedBy</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#isReplacedBy-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/isReplacedBy</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/isReplacedBy</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/isReplacedBy</IRI>
+        <Literal xml:lang="en-us">The described resource is supplanted, displaced, or 
+            superseded by the referenced resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/isReplacedBy</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isReplacedBy</IRI>
+        <Literal xml:lang="en-us">Is Replaced By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/isRequiredBy</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/isRequiredBy</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#isRequiredBy-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/isRequiredBy</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/isRequiredBy</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/isRequiredBy</IRI>
+        <Literal xml:lang="en-us">The described resource is required by the referenced resource, 
+            either physically or logically.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/isRequiredBy</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isRequiredBy</IRI>
+        <Literal xml:lang="en-us">Is Required By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#isVersionOf-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <Literal xml:lang="en-us">The described resource is a version, edition, or adaptation 
+            of the referenced resource. Changes in version imply substantive 
+            changes in content rather than differences in format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isVersionOf</IRI>
+        <Literal xml:lang="en-us">Is Version Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/issued</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/issued</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#issued-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/issued</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/issued</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/issued</IRI>
+        <Literal xml:lang="en-us">Date of formal issuance (e.g., publication) of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/issued</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/issued</IRI>
+        <Literal xml:lang="en-us">Issued</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <Literal xml:lang="en-us">The audiences for a resource are of two basic classes: (1) an 
+            ultimate beneficiary of the resource, and (2) frequently, an 
+            entity that mediates access to the resource.  The mediator 
+            element refinement represents the second of these two classes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#mediator-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <Literal>2001-05-21</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <Literal>2002-07-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <Literal xml:lang="en-us">A class of entity that mediates access to the
+            resource and for whom the resource is intended or useful.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/mediator</IRI>
+        <Literal xml:lang="en-us">Mediator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#medium-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <Literal xml:lang="en-us">The material or physical carrier of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <Literal xml:lang="en-us">Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/modified</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/modified</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#modified-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/modified</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/modified</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/modified</IRI>
+        <Literal xml:lang="en-us">Date on which the resource was changed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/modified</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/modified</IRI>
+        <Literal xml:lang="en-us">Modified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/references</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/references</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#references-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/references</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/references</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/references</IRI>
+        <Literal xml:lang="en-us">The described resource references, cites, or otherwise points 
+            to the referenced resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/references</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/references</IRI>
+        <Literal xml:lang="en-us">References</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/replaces</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/replaces</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#replaces-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/replaces</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/replaces</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/replaces</IRI>
+        <Literal xml:lang="en-us">The described resource supplants, displaces, or supersedes 
+            the referenced resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/replaces</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/replaces</IRI>
+        <Literal xml:lang="en-us">Replaces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/requires</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/requires</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#requires-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/requires</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/requires</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/requires</IRI>
+        <Literal xml:lang="en-us">The described resource requires the referenced resource to 
+            support its function, delivery, or coherence of content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/requires</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/requires</IRI>
+        <Literal xml:lang="en-us">Requires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#spatial-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+        <Literal xml:lang="en-us">Spatial characteristics of the intellectual content of the resoure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/spatial</IRI>
+        <Literal xml:lang="en-us">Spatial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/tableOfContents</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/tableOfContents</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#tableOfContents-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/tableOfContents</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/tableOfContents</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/tableOfContents</IRI>
+        <Literal xml:lang="en-us">A list of subunits of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/tableOfContents</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/tableOfContents</IRI>
+        <Literal xml:lang="en-us">Table Of Contents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#temporal-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+        <Literal xml:lang="en-us">Temporal characteristics of the intellectual content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/temporal</IRI>
+        <Literal xml:lang="en-us">Temporal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+        <IRI>http://purl.org/dc/terms/valid</IRI>
+        <IRI>http://dublincore.org/usage/documents/principles/#element-refinement</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/valid</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#valid-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <IRI>http://purl.org/dc/terms/valid</IRI>
+        <Literal>2000-07-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <IRI>http://purl.org/dc/terms/valid</IRI>
+        <Literal>2002-06-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/valid</IRI>
+        <Literal xml:lang="en-us">Date (often a range) of validity of a resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/valid</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/valid</IRI>
+        <Literal xml:lang="en-us">Valid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#MetabolicObject</IRI>
+        <Literal>The actual physical entity (or set of entities) an urban metabolism is associated with. The material thing(s) considered to be metabolising resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#MetabolicRate</IRI>
+        <Literal>A measure of the pace at which a Resource Flow occurs within a Metabolic Timespan, possibly expressed as a ratio relative to a particular unit in addition to time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#MetabolicSite</IRI>
+        <Literal>The spatial region containing an area or volume delineating where urban metabolic processes occur. The region envelops the Metabolic Object(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#MetabolicTimespan</IRI>
+        <Literal>A defined temporal period during which urban metabolic activities take place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#PursuedState</IRI>
+        <Literal>The target that an UrbanAgent aims to achieve through specific activities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Resource</IRI>
+        <Literal>A tangible or intangible entity, including abstract representations of value or impact, that is used, transformed, or produced in urban metabolic processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ResourceAccumulation</IRI>
+        <Literal>The process where the quantity of a resource within a metabolic site increases, often due to inputs exceeding outputs, or through conservation and storage practices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ResourceDepletion</IRI>
+        <Literal>The reduction in the quantity of a resource within a metabolic site, which can occur a.o. through consumption, transformation, entropy, leaks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ResourceFlow</IRI>
+        <Literal>The input of resources associated to a metabolic site, which are necessary for the initiation or continuation of metabolic processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ResourceFlowRate</IRI>
+        <Literal>A measure of the generic footprint of a whole metabolism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ResourceInflow</IRI>
+        <Literal>The input of resources associated to a metabolic site, which are necessary for the initiation or continuation of metabolic processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ResourceOutflow</IRI>
+        <Literal>The export or emission of resources associated to a metabolic site after they have been processed or utilized</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#UrbanActivity</IRI>
+        <Literal>Activities carried out for an urban setting, aimed at reaching a desired outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#UrbanAgent</IRI>
+        <Literal>An entity (individual, collective, or institutional) that initiates or participates in activities for an urban environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#UrbanMetabolism</IRI>
+        <Literal>The systemic process of resource transformation and energy exchange for an urban environment to support the functioning and sustainability of urban activities.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
