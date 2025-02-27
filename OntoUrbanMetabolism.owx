@@ -3537,7 +3537,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#MetabolicObject</IRI>
-        <Literal>The actual physical entity (or set of entities) an urban metabolism is associated with. The material thing(s) considered to be metabolising resources.</Literal>
+        <Literal xml:lang="en">The actual physical entity (or set of entities) an urban metabolism is associated with. The material thing(s) considered to be metabolising resources.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -3550,9 +3550,39 @@
         <Literal>The spatial region containing an area or volume delineating where urban metabolic processes occur. The region envelops the Metabolic Object(s).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetabolicSite</IRI>
+        <Literal>Unconventional Examples: The inside of a wok, a street crossing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetabolicSite</IRI>
+        <Literal>Urban Domain Examples: The interior space of an office building, a city park.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetabolicSite</IRI>
+        <Literal>Weird but Valid Examples: The belly of a stray cat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#MetabolicTimespan</IRI>
         <Literal>A defined temporal period during which urban metabolic activities take place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetabolicTimespan</IRI>
+        <Literal>Unconventional Examples: Duration of a typical walk.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetabolicTimespan</IRI>
+        <Literal>Urban Domain Examples: The day of 1st January 2023, a typical year.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetabolicTimespan</IRI>
+        <Literal>Weird but Valid Examples: The snap of a finger.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -3560,9 +3590,39 @@
         <Literal>The target that an UrbanAgent aims to achieve through specific activities.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PursuedState</IRI>
+        <Literal>Unconventional Examples: Satisfied customers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PursuedState</IRI>
+        <Literal>Urban Domain Examples: A city achieving zero waste status, a neighbourhood reaching a set level of green coverage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PursuedState</IRI>
+        <Literal>Weird but valid examples: Fully functional code, lower stress level, winning a monopoly game, scratched sofa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Resource</IRI>
         <Literal>A tangible or intangible entity, including abstract representations of value or impact, that is used, transformed, or produced in urban metabolic processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Resource</IRI>
+        <Literal>Unconventional Examples: Coffee beans, kaya, beer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Resource</IRI>
+        <Literal>Urban Domain Examples: Solar radiation, natural gas, recycled materials, equivalent CO2, currencies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Resource</IRI>
+        <Literal>Weird but Valid Examples: Monopoly currency, backflips, curses, scratches.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -3570,14 +3630,39 @@
         <Literal>The process where the quantity of a resource within a metabolic site increases, often due to inputs exceeding outputs, or through conservation and storage practices</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResourceAccumulation</IRI>
+        <Literal>Urban Domain Examples: The build-up of snow on city streets during a blizzard, the collection of rainwater in a cistern for future use in municipal landscaping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#ResourceDepletion</IRI>
         <Literal>The reduction in the quantity of a resource within a metabolic site, which can occur a.o. through consumption, transformation, entropy, leaks</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResourceDepletion</IRI>
+        <Literal>Urban Domain Examples: The lowering of water levels in an urban reservoir, the reduction of available parking spaces in a city during peak hours, the decrease in available green space in a city due to urban development.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#ResourceFlow</IRI>
         <Literal>The input of resources associated to a metabolic site, which are necessary for the initiation or continuation of metabolic processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResourceFlow</IRI>
+        <Literal>Unconventional Examples: The flow of beverages into a food centre attendee.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResourceFlow</IRI>
+        <Literal>Urban Domain Examples: The flow of potable water through city pipes to homes, the circulation of electricity through the grid to consumers, or the movement of waste to recycling facilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResourceFlow</IRI>
+        <Literal>Weird but Valid Examples: monopoly currency being given to the bank.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -3590,9 +3675,19 @@
         <Literal>The input of resources associated to a metabolic site, which are necessary for the initiation or continuation of metabolic processes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResourceInflow</IRI>
+        <Literal>Urban Domain Examples: The import of food supplies into a city, the arrival of fresh water from a treatment plant, or the influx of solar energy collected by urban solar panels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#ResourceOutflow</IRI>
         <Literal>The export or emission of resources associated to a metabolic site after they have been processed or utilized</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResourceOutflow</IRI>
+        <Literal>Urban Domain Examples: The discharge of treated wastewater into a river, the export of manufactured goods, or the release of heat energy from industrial processes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -3600,14 +3695,59 @@
         <Literal>Activities carried out for an urban setting, aimed at reaching a desired outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanActivity</IRI>
+        <Literal>Unconventional Examples: serving food and beverages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanActivity</IRI>
+        <Literal>Urban Domain Examples: Street cleaning operations, community gardening, traffic management.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanActivity</IRI>
+        <Literal>Weird but valid examples: cursing the soccer match on TV, purchasing a plot on Monopoly.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#UrbanAgent</IRI>
         <Literal>An entity (individual, collective, or institutional) that initiates or participates in activities for an urban environment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanAgent</IRI>
+        <Literal>Unconventional Examples: wait staff.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanAgent</IRI>
+        <Literal>Urban Domain Examples: A municipal government, a community group, utility companies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanAgent</IRI>
+        <Literal>Weird but valid examples: a street clown, a boardgame player, a cute but chaotic cat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#UrbanMetabolism</IRI>
         <Literal>The systemic process of resource transformation and energy exchange for an urban environment to support the functioning and sustainability of urban activities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanMetabolism</IRI>
+        <Literal>Unnconventional Examples: Food and beverages reducing stress in customers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanMetabolism</IRI>
+        <Literal>Urban Domain Examples: The conversion of electrical energy for street lighting, the processing of water for domestic use, or the treatment and recycling of waste.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanMetabolism</IRI>
+        <Literal>Weird but valid Examples: The psychological alleviation of one’s state thanks to cursing current events, the annoyance of a cat parent.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
