@@ -1,4 +1,4 @@
-![OntoUrbanMetabolism - sharing - Paper BFO Explainer - alt view](https://github.com/user-attachments/assets/0340d9ed-f26f-4ad1-8396-943425476b32)# OUM - An Ontology for Urban Metabolism
+# OUM - An Ontology for Urban Metabolism
 
 This repository maintains the Ontology for Urban Metabolism (OUM), an ontology designed to represent and unify knowledge of Urban Metabolism (UM) across diverse application domains. 
 
